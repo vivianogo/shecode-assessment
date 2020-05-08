@@ -1,0 +1,112 @@
+<html >
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/front-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="port.css"/>
+    <title>Portfolio</title>
+    <!--javascript file*/-->
+   
+</head>
+<body>
+    <div style="width: 100%; height: 100%;">
+        <header id="head">
+            <div id="logo">OGO<br><hr><span>VIVI</span></div>
+                <a href="#image">Home</a>
+                <a href="#profile">About</a>
+                <a href="#exp">Experience</a>
+                <a href="#">Contacts</a>
+                <a href="#edu">Education</a>
+                <a href="#">Work</a>
+                <a href="#skills">Skills</a>
+                    
+        </header>
+        
+        <section id="sec">
+            
+            <div id="image" class="box" >
+            </div>
+            <div id="profile" class="box">     
+                <h1> About</h1>
+                <p id="oji"></p>
+                    <p id="about">
+                    My name is ogbuanu Ogochukwu Vivian, from Enugu state Nigeria.
+                    A young person that makes punctuality part of her life, able to work in challenging
+                    environment where there are opportunities for professional development and career
+                    advancement Skilled administrative duties and also an IT literate always having a strong
+                    passion for software development, interacting with people to share ideas and knowledge of
+                    software/programming. 
+                        <br>
+                 <input type="number" id="firstnum">
+                 <input type="number" id="secondnum">
+                <button type="button" onclick="firstfunction()">Click Me</button>
+
+                        <!--javascript file-->
+        <script type="text/javascript">
+            //document.getElementById("profile").innerHTML="first javascript project";
+            //document.getElementById("profile").style.color="red";
+           // document.getElementById("profile").style.fontSize="px";
+           // document.getElemen..................................................tById("profile").style.border="10px soild gray";
+
+            function firstfunction(){
+                //document.getElementById("profile").innerHTML="our function is working";
+                var a= document.getElementById("firstnum").value;
+                var b= document.getElementById("secondnum").value;
+                var c = parseInt(a) + parseInt(b);
+                document.getElementById("oji").innerHTML= c;
+            }
+        </script>
+<br>
+        <h4>Different way of doing function</h4>
+             <input type="number" id="firstnum">
+             <input type="number" id="secondnum">
+             <button type="button" onclick="lastfunction(document.getElementById('firstnum').value,document.getElementById('secondnum').value)">Click Me</button>
+
+                <script>
+                        function lastfunction(a,b){
+                        //document.getElementById("profile").innerHTML="our function is working";
+                        var c = parseInt(a) + parseInt(b);
+                        document.getElementById("profile").innerHTML= c;
+                    }
+                </script>
+            </p>
+            </div>
+            
+        </section>
+        
+    </div>
+    
+    <!-- <h2>WELCOME TOMY PORTFOLIO</h2> -->
+
+    
+    <div style="width: 100%; height: 100%;">
+        
+        <section id="skills" class="box">
+            <h1>Skills</h1>
+            <p>
+                I love development and design.<br>
+                i'm most comfortable with front-end,<br>Using html5 to create unimaginable website with awesome features.<br>
+                A little idea of what the back-end is all about. <br>She can able to achieve the customer’s goals and purposes in use
+                situations<br>and also had experience on customer service and communication skill. 
+            </p>
+            </section>
+        <article id='exp' class="box">
+            <h1>Experiences</h1>
+            <p>
+            I'm trying to learn web development.<br>
+            I worked as an intern solution delivery  analyst assistant<br> at Tenece Professional Services in 2015 and
+            also in Genesys Techhub<br>  where i implemented customer relationship management (CRM).
+        </p>
+            </article>
+    </div>
+     <nav id='edu'>
+         <h1>Educational qualifications</h1>
+         <p>I graduated from Godfrey Okoye University Thinkers Enugu, <br>
+            where i obtain a degree on Computer Science currently waiting for NYSC before next year.<br>
+            I'm an OND holder in Statistics from Institue of Management and Technology Enugu since 2014.<br>
+            WestAfrica Certificate was in 2010 in Queen's Secondary Enugu and<br>
+            First School Leaving was 2004 at Community Primary School Ugwuike Iwollo in Ezeagu. 
+        </p>
+     </nav>
+
+     <footer>copy right@</footer>
+</body>
+</html>
